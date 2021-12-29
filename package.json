@@ -1,0 +1,28 @@
+{
+    "name": "lab1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint . --ignore-path .gitignore  --no-error-on-unmatched-pattern",
+        "lint:fix": "eslint . --ignore-path .gitignore  --fix",
+        "lint:style": "stylelint \"**/*.css\" --ignore-path .gitignore",
+        "lint:style:fix": "stylelint \"**/*.css\" --fix",
+        "format": "prettier . --check --ignore-path .gitignore",
+        "format:fix": "prettier . --ignore-path .gitignore --write",
+        "prepare": "husky install",
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^7.32.0",
+        "eslint-config-metarhia": "^7.0.1",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-sonarjs": "^0.10.0",
+        "husky": "^7.0.4",
+        "prettier": "^2.4.1",
+        "stylelint": "^13.13.1",
+        "stylelint-config-prettier": "^8.0.2",
+        "stylelint-declaration-use-variable": "^1.7.3"
+    }
+}

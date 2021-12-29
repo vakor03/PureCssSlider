@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./index.css" />
+        <title>Swiper</title>
+    </head>
+    <body>
+        <header>
+            <input type="checkbox" id="burger" />
+            <div class="burger-container">
+                <h1>Burger-menu</h1>
+                <label for="burger" class="burger-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+            </div>
+            <label for="burger" class="backdrop"></label>
+            <nav>
+                <a href="https://github.com/Akara4ok/web-labs/pull/5">Lab1</a>
+                <a href="https://github.com/Akara4ok/web-labs/pull/6">Lab2</a>
+                <a href="https://github.com/Akara4ok/web-labs/pull/7">Lab3</a>
+                <a href="https://github.com/Akara4ok/web-labs/pull/8">Lab4</a>
+            </nav>
+        </header>
+        <main>
+            <div class="swiper">
+                <input
+                    type="radio"
+                    name="radio-swiper"
+                    id="1"
+                    data-slide="1"
+                    checked
+                />
+                <input type="radio" name="radio-swiper" id="2" data-slide="2" />
+                <input type="radio" name="radio-swiper" id="3" data-slide="3" />
+                <input type="radio" name="radio-swiper" id="4" data-slide="4" />
+                <div class="image-wrapper">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <label for="1" class="button left-button">&#60;</label>
+                <label for="2" class="button left-button">&#60;</label>
+                <label for="3" class="button left-button">&#60;</label>
+                <label for="4" class="button left-button">&#60;</label>
+                <label for="1" class="button right-button">&#62;</label>
+                <label for="2" class="button right-button">&#62;</label>
+                <label for="3" class="button right-button">&#62;</label>
+                <label for="4" class="button right-button">&#62;</label>
+
+                <div class="label-containers">
+                    <label for="1"></label>
+                    <label for="2"></label>
+                    <label for="3"></label>
+                    <label for="4"></label>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
