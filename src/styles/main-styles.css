@@ -1,20 +1,18 @@
-:root{
+:root {
     --body-bg-color: #232323;
     --main-font-color: #cdcdcd;
-    --main-font-family: "Avenir Next", "Avenir", sans-serif;
+    --main-font-family: 'Avenir Next', 'Avenir', sans-serif;
     --header-text-align: center;
 }
 
-body
-{
-    margin: 0;
-    padding: 0;
-
+body {
     background: var(--body-bg-color);
     color: var(--main-font-color);
     font-family: var(--main-font-family);
+    margin: 0;
+    padding: 0;
 }
 
-header h1{
+header h1 {
     text-align: var(--header-text-align);
 }
