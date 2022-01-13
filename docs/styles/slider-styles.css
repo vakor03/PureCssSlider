@@ -136,27 +136,27 @@
     background: var(--dot4-color);
 }
 
-.i1:checked ~ .one,
-.i2:checked ~ .two,
-.i3:checked ~ .three,
-.i4:checked ~ .four {
+.slider_i1:checked ~ .one,
+.slider_i2:checked ~ .two,
+.slider_i3:checked ~ .three,
+.slider_i4:checked ~ .four {
     animation: var(--slide-checked-animation);
     z-index: 9;
 }
 
-.i1:checked ~ .nav_slide .dot1 {
+.slider_i1:checked ~ .nav_slide .dot1 {
     background: var(--dot1-color);
 }
 
-.i2:checked ~ .nav_slide .dot2 {
+.slider_i2:checked ~ .nav_slide .dot2 {
     background: var(--dot2-color);
 }
 
-.i3:checked ~ .nav_slide .dot3 {
+.slider_i3:checked ~ .nav_slide .dot3 {
     background: var(--dot3-color);
 }
 
-.i4:checked ~ .nav_slide .dot4 {
+.slider_i4:checked ~ .nav_slide .dot4 {
     background: var(--dot4-color);
 }
 
