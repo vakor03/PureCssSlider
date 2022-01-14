@@ -1,0 +1,150 @@
+:root {
+    --menu-li-padding: 10px 0;
+    --menu-li-font-size: 22px;
+
+    --menu-icon-checked-color: #232323;
+    --menu-icon-checked-first-transform: rotate(45deg) translate(-2px, -1px);
+    --menu-icon-checked-last-transform: rotate(-45deg) translate(0, -1px);
+
+    --menu-toggle-top: 50px;
+    --menu-toggle-left: 50px;
+
+    --menu-a-color: #232323;
+    --menu-a-hover-color: rgba(155, 0, 250, 1);
+    --menue-a-transition: color 0.3s ease;
+
+    --menu-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    --menu-transform: translate(-100%, 0);
+    --menu-bg: #ededed;
+    --menu-width: 300px;
+    --menu-padding: 125px 50px 50px;
+    --menu-margin: -100px 0 0 -50px;
+
+    --menu-toggle-input-width: 40px;
+    --menu-toggle-input-height: 32px;
+    --menu-toggle-input-top: -7px;
+    --menu-toggle-input-left: -5px;
+
+    --menu-line-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+
+    --menu-line-width: 33px;
+    --menu-line-height: 4px;
+    --menu-line-color: #cdcdcd;
+    --menu-line-border-radius: 3px;
+    --menu-line-margin-bottom: 5px;
+    --menu-line-transform-origin: 4px 0;
+
+    --backdrop-bg: rgba(0, 0, 0, 0);
+}
+
+.menuToggle {
+    display: block;
+    left: var(--menu-toggle-left);
+    position: relative;
+    top: var(--menu-toggle-top);
+
+    user-select: none;
+
+    z-index: 20;
+}
+
+.menuToggle a {
+    color: var(--menu-a-color);
+    text-decoration: none;
+    transition: var(--menue-a-transition);
+}
+
+.menuToggle a:hover {
+    color: var(--menu-a-hover-color);
+}
+
+.menuToggle input {
+    cursor: pointer;
+    display: block;
+    height: var(--menu-toggle-input-height);
+    left: var(--menu-toggle-input-left);
+
+    opacity: 0;
+    position: absolute;
+    top: var(--menu-toggle-input-top);
+    width: var(--menu-toggle-input-width);
+    z-index: 2;
+}
+
+.menuToggle span {
+    background: var(--menu-line-color);
+    border-radius: var(--menu-line-border-radius);
+    display: block;
+    height: var(--menu-line-height);
+    margin-bottom: var(--menu-line-margin-bottom);
+    position: relative;
+
+    transform-origin: var(--menu-line-transform-origin);
+
+    transition: var(--menu-line-transition);
+    width: var(--menu-line-width);
+
+    z-index: 1;
+}
+
+.menuToggle span:first-child {
+    transform-origin: 0 0;
+}
+
+.menuToggle span:nth-last-child(2) {
+    transform-origin: 0 100%;
+}
+
+.menuToggle input:checked ~ span:nth-last-child(4) {
+    background: var(--menu-icon-checked-color);
+    transform: var(--menu-icon-checked-first-transform);
+}
+
+.menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+}
+
+.menuToggle input:checked ~ span:nth-last-child(2) {
+    background: var(--menu-icon-checked-color);
+    transform: var(--menu-icon-checked-last-transform);
+}
+
+.menu {
+    background: var(--menu-bg);
+    list-style-type: none;
+    margin: var(--menu-margin);
+    padding: var(--menu-padding);
+    position: absolute;
+    transform: var(--menu-transform);
+
+    transform-origin: 0 0;
+    transition: var(--menu-transition);
+    width: var(--menu-width);
+}
+
+.menu li {
+    font-size: var(--menu-li-padding);
+    padding: var(--menu-li-padding);
+}
+
+.menuToggle input:checked ~ ul {
+    transform: none;
+}
+
+.menuToggle .toggle:checked ~ .backdrop {
+    display: block;
+}
+
+.backdrop {
+    background-color: var(--backdrop-bg);
+    bottom: 0;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}

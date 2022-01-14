@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Title</title>
+        <link
+            href="/PureCssSlider/styles/slider-styles.css"
+            type="text/css"
+            rel="stylesheet" />
+        <link
+            href="/PureCssSlider/styles/nav_styles.css"
+            type="text/css"
+            rel="stylesheet" />
+        <link
+            href="/PureCssSlider/styles/main-styles.css"
+            type="text/css"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <nav role="navigation">
+                <div class="menuToggle">
+                    <input class="toggle" id="toggle" type="checkbox" />
+                    <label class="backdrop" for="toggle"></label>
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul class="menu">
+                        <a href="#">
+                            <li>Link 1</li>
+                        </a>
+                        <a href="#">
+                            <li>Link 2</li>
+                        </a>
+                        <a href="#">
+                            <li>Link 3</li>
+                        </a>
+                        <a href="#">
+                            <li>Link 4</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+            <h1>Pure css menu and slider</h1>
+        </header>
+
+        <div class="slider-container">
+            <input
+                type="radio"
+                class="slider_i1"
+                id="i1"
+                name="images"
+                checked />
+            <input type="radio" class="slider_i2" id="i2" name="images" />
+            <input type="radio" class="slider_i3" id="i3" name="images" />
+            <input type="radio" class="slider_i4" id="i4" name="images" />
+
+            <div class="slide_img one">
+                <img src="/PureCssSlider/images/1.jpg" alt="first image" />
+
+                <label class="prev" for="i4"><span></span></label>
+                <label class="next" for="i2"><span></span></label>
+            </div>
+
+            <div class="slide_img two">
+                <img src="/PureCssSlider/images/2.jpg" alt="second image" />
+
+                <label class="prev" for="i1"><span></span></label>
+                <label class="next" for="i3"><span></span></label>
+            </div>
+
+            <div class="slide_img three">
+                <img src="/PureCssSlider/images/3.jpg" alt="third image" />
+
+                <label class="prev" for="i2"><span></span></label>
+                <label class="next" for="i4"><span></span></label>
+            </div>
+
+            <div class="slide_img four">
+                <img src="/PureCssSlider/images/4.jpg" alt="fourth img" />
+
+                <label class="prev" for="i3"><span></span></label>
+                <label class="next" for="i1"><span></span></label>
+            </div>
+
+            <div class="nav_slide">
+                <label for="i1" class="dots dot1"></label>
+                <label for="i2" class="dots dot2"></label>
+                <label for="i3" class="dots dot3"></label>
+                <label for="i4" class="dots dot4"></label>
+            </div>
+        </div>
+    </body>
+</html>

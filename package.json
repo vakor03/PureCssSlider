@@ -1,0 +1,25 @@
+{
+    "name": "pure-css-slider",
+    "homepage": "https://vakor03.github.io/PureCssSlider",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "module": "module.js",
+    "scripts": {
+        "format": "prettier --ignore-path .gitignore --check .",
+        "format:fix": "prettier --ignore-path .gitignore . --write",
+        "lint:style": "stylelint --ignore-path .gitignore \"./**/*.css\"",
+        "lint:style:fix": "npm run lint:style --ignore-path .gitignore -- --fix",
+        "prepare": "husky install"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "husky": "^7.0.4",
+        "prettier": "2.4.0",
+        "stylelint": "^13.13.1",
+        "stylelint-config-prettier": "^8.0.2",
+        "stylelint-config-sass-guidelines": "^8.0.0",
+        "stylelint-declaration-use-variable": "^1.7.3"
+    }
+}
